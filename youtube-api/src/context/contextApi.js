@@ -15,10 +15,10 @@ export const AppContext = (props) => {
   }, [selectCategories]);
 
   const fetchSelectedCategoryData = (query) => {
-    setLoading(true)
-    fetchDataFromApi(`search/?q=${query}`).then((res) => {
-      console.log(res);
-      // setSearchResults
+    setLoading(true); 
+    fetchDataFromApi(`search/?q=${query}`).then(({ contents }) => {
+      console.log(contents);
+      setSearchResults(contents);
       setLoading(false);
     });
   };
