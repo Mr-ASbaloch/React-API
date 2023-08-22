@@ -5,7 +5,7 @@ const Mocktest = () => {
 
   useEffect(() => {
     // Fetch data when the component mounts
-    fetch("https://jsonplaceholder.typicode.com/posts")     
+    fetch("https://jsonplaceholder.typicode.com/comments")     
       .then((response) => response.json())
       .then((result) => {
         setPosts(result);
@@ -14,12 +14,15 @@ const Mocktest = () => {
 
   return (
     <div>
-      <div className="main">
-        <div>
+      <div >
+        <div className="main">
           {posts.map((data) => {
             return (
-              <div key={data.id}> {/* Don't forget to add a key to each mapped element */}
+              <div id="child-div" key={data.id}> {/* Don't forget to add a key to each mapped element */ }
                 <h1>ID : {data.id}</h1>
+                <p>Name :{data.name}</p>
+                <h3> Email  : <p>{data.email}</p></h3>
+               
               </div>
             );
           })}

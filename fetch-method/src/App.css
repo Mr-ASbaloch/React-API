@@ -1,5 +1,14 @@
 .main{
   display: flex;
-  flex-wrap: wrap;
+ flex-wrap: wrap;
   justify-content: space-around;
+  gap: 20px ;
+  text-align: center;
 }
+#child-div{
+  width: 35.3%;
+  border: 2px solid brown ;
+  padding: 10px;
+  
+}
+
