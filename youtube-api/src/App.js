@@ -11,7 +11,7 @@ function App() {
   return (
     <AppContext>
       <BrowserRouter>
-        <div className="flex flex-col h-full bg-slate-400">
+        <div className="flex flex-col h-full ">
           <Header/>
           <Routes>
             <Route path="/" exact element={<Feed/>}/>
