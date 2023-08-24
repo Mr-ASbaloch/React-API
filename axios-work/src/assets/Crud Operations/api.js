@@ -1,0 +1,1 @@
+const api = ( 'https://64e70013b0fd9648b78f2911.mockapi.io/crud ')
